@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<script src="scripts.js"></script>
+</head>
+<body>
+    <h2>Cambio de texto</h2>
+<p id="demo">
+Haz click debajo y verás que pasa
+</p>  
+<button onclick="document.getElementById('demo').innerHTML='Gracias por pulsar el botón'">
+    Haz click aquí
+</button>
+<img  id="foto" src="IMG/Lionel_Messi_20180626.jpg" alt="">
+<br>
+<button onclick="messi('azul')">Azul</button>
+
+<button onclick="messi('lila')">Lila</button>
+
+<h2>Estilos</h2>
+<button onclick="document.getElementById('cambio letra').style.fontSize='35px'">Aumentar</button>
+<p id="cambio letra">
+Hazme más grande 
+</p>
+<h2>Esconder y mostrar cosas</h2>
+<div id="escondido">
+<p>Yo voy a aparecer y desaparecer</p>
+<p>Yo también</p>
+<p>Y yo</p>
+</div>
+<button onclick="esconder()">Escóndete</button>
+<button onclick="mostrar()">Muéstrate</button>
+<h2>Impeimir</h2>
+<button onclick="imprimir()">Imprímeme</button>
+<h2>Calcular</h2>
+<button onclick="calcular()">Calcula</button>
+<button type="button" onClick="onClick()">Haz click aquí</button>
+<h2>Contador de Clicks: <a id="clicks">0</a></h2>
+<h2>Array</h2>
+<button type="button" onclick="pruebaArrays()">
+   Ver alumnos
+</button>
+<button type="button" onclick="borrarPrimero()" > 
+    Borra el primero 
+</button>
+<button type="button" onclick="borrarUltimo()" > 
+        Borra el ultimo
+    </button>
+<p id="listaAlumnos"></p>
+
+
+</body>
+</html>
